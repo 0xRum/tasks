@@ -106,5 +106,5 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    return values.map((value) => value + 1);
+    return [];
 }
