@@ -143,5 +143,17 @@ export function editOption(
     targetOptionIndex: number,
     newOption: string,
 ): Question[] {
-    return [];
+    return questions.map((question: Question): Question => {
+        if (question.id !== targetId) {
+            return { ...question };
+        }
+
+        const newOptions = [...question.options];
+        if (targetOptionIndex === -1) {
+            newOptions.push(newOption);
+        } else {
+            newOptions[targetOptionIndex] = newOption;
+        }
+        return { ...question, options: newOptions };
+    });
 }
