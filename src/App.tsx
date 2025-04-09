@@ -13,6 +13,7 @@ function App(): React.JSX.Element {
         <div className="App">
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
+                <p>Garrett Rumery</p>
             </header>
             <Container>
                 <Row>
