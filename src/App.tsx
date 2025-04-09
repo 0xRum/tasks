@@ -1,61 +1,60 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { TwoDice } from "./components/TwoDice";
+import { Counter } from "./components/Counter";
+import { StartAttempt } from "./components/StartAttempt";
+import { CycleHoliday } from "./components/CycleHoliday";
 
 function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
+                <p>Garrett Rumery</p>
             </header>
-            <h1>Heading 1</h1>
-            <img src="..assets/images/" alt="this is some alt text" />
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
-            <p>Garrett Rumery</p>
-            This is <span style={{ color: "red" }}>colored text</span>.
-            <ol>
-                <li>first list</li>
-                <li>second list</li>
-                <li>third list</li>
-            </ol>
-            <Button
-                onClick={() => {
-                    console.log("Hello World!");
-                }}
-            >
-                Log Hello World
-            </Button>
             <Container>
                 <Row>
                     <Col>
-                        <div
-                            style={{
-                                width: "auto",
-                                height: "auto",
-                                backgroundColor: "red",
-                            }}
-                        >
-                            First column
-                        </div>
+                        <h2>Counter Component</h2>
+                        <Counter />
                     </Col>
+                </Row>
+                <hr />
+                <Row>
                     <Col>
-                        <div
-                            style={{
-                                width: "auto",
-                                height: "auto",
-                                backgroundColor: "red",
-                            }}
-                        >
-                            Second Column. Lorem ipsum dolor, sit amet
-                            consectetur adipisicing elit. Harum eius
-                            reprehenderit quasi magnam, consequuntur hic
-                            distinctio nobis quam aliquid aperiam laborum culpa
-                            quia repellendus. Esse non suscipit ea repellendus
-                            assumenda.
-                        </div>
+                        <h2>Reveal Answer Component</h2>
+                        <RevealAnswer />
+                    </Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col>
+                        <h2>Two Dice Component</h2>
+                        <TwoDice />
+                    </Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col>
+                        <h2>Change Type Component</h2>
+                        <ChangeType />
+                    </Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col>
+                        <h2>Start Attempt Component</h2>
+                        <StartAttempt />
+                    </Col>
+                </Row>
+                <hr />
+                <Row>
+                    <Col>
+                        <h2>Cycle Holiday Component</h2>
+                        <CycleHoliday />
                     </Col>
                 </Row>
             </Container>
