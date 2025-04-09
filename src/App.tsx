@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
@@ -13,11 +13,22 @@ function App(): React.JSX.Element {
                 UM COS420 with React Hooks and TypeScript
             </header>
             <hr></hr>
-            <Counter></Counter>
+            <Container>
+                <Row>
+                    <Col>
+                        <Counter></Counter>
+                    </Col>
+                </Row>
+            </Container>
             <hr />
-            <RevealAnswer></RevealAnswer>
-            <hr />
-            <TwoDice></TwoDice>
+            <Row>
+                <Col>
+                    <RevealAnswer></RevealAnswer>
+                </Col>
+                <Col>
+                    <TwoDice></TwoDice>
+                </Col>
+            </Row>
             <hr />
             <ChangeType></ChangeType>
         </div>
