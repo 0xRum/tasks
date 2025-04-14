@@ -1,12 +1,11 @@
 import React from "react";
-// import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
 import { Counter } from "./components/Counter";
 import { DoubleHalf } from "./bad-components/DoubleHalf";
-// import { ColoredBox } from "./bad-components/ColoredBox";
+import { ColoredBox } from "./bad-components/ColoredBox";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
@@ -28,6 +27,8 @@ function App(): React.JSX.Element {
             <DoubleHalf></DoubleHalf>
             <hr />
             <ChooseTeam></ChooseTeam>
+            <hr />
+            <ColoredBox></ColoredBox>
         </div>
     );
 }
